@@ -59,7 +59,7 @@ export const MapProvider = ({ children }: Props) => {
     }
 
     dispatch({ type: "setMarkers", payload: newMarkers });
-  }, [places, state]);
+  }, [places]);
 
   const setMap = (map: Map) => {
     const myLocationPopup = new Popup().setHTML(`
